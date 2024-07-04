@@ -1,0 +1,19 @@
+#.gitlab-ci.yml
+
+stages:
+  - deploy
+
+production:
+  stage: deploy
+  tags:
+    - develop
+  before_script:
+    - cd /srv/develop/soundprosolution/admin
+    - git fetch --all
+    - git reset --hard ${CI_COMMIT_SHA}
+  script:
+    - npm install
+    - npm run build
+  only:
+    - master
+  when: manual

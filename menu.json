@@ -1,0 +1,28 @@
+[
+  {
+    "icon": "md-dashboard",
+    "isGroup": false,
+    "title": "Dashboard",
+    "link": "/"
+  },
+  {
+    "isGroup": true,
+    "title": "Dictionary",
+    "key": "dict_group",
+    "subItems": [
+      {
+        "icon": "md-book-sharp",
+        "isGroup": false,
+        "title": "Dictionaries",
+        "link": "/dictionaries"
+      }
+    ]
+  },
+  {
+    "icon": "bi-pc-display-horizontal",
+    "isGroup": false,
+    "title": "Filemanager",
+    "link": "/filemanager",
+    "key": "file_manager"
+  }
+]
